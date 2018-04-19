@@ -8,26 +8,24 @@ import java.awt.event.ActionListener;
 
 public class PanelMain extends JPanel {
 
+    private ButtonHandler buttonHandler = new ButtonHandler();
+
     public PanelMain() {
-        JButton buttonOefening1 = new JButton("Oefening 3.1");
-        JButton buttonOefening2 = new JButton("Oefening 3.2");
-        JButton buttonOefening3 = new JButton("Oefening 3.3 en 3.4");
-        JButton buttonOefening5 = new JButton("Oefening 3.5");
+        add(newButton("Oefening 3.1", "Oefening_1"));
+        add(newButton("Oefening 3.2", "Oefening_2"));
+        add(newButton("Oefening 3.3 en 3.4", "Oefening_3"));
+        add(newButton("Oefening 3.5", "Oefening_5"));
+        add(newButton("Oefening 3.6", "Oefening_6"));
+        add(newButton("Oefening 3.7", "Oefening_7"));
+        add(newButton("Oefening 3.8", "Oefening_8"));
 
-        buttonOefening1.setName("Oefening_1");
-        buttonOefening1.addActionListener(new ButtonHandler());
-        buttonOefening2.setName("Oefening_2");
-        buttonOefening2.addActionListener(new ButtonHandler());
-        buttonOefening3.setName("Oefening_3");
-        buttonOefening3.addActionListener(new ButtonHandler());
-        buttonOefening5.setName("Oefening_5");
-        buttonOefening5.addActionListener(new ButtonHandler());
+    }
 
-        add(buttonOefening1);
-        add(buttonOefening2);
-        add(buttonOefening3);
-        add(buttonOefening5);
-
+    private JButton newButton(String text, String name) {
+        JButton button = new JButton(text);
+        button.setName(name);
+        button.addActionListener(buttonHandler);
+        return button;
     }
 
 
@@ -41,6 +39,12 @@ public class PanelMain extends JPanel {
                 return new PanelOefening3();
             case "Oefening_5":
                 return new PanelOefening5();
+            case "Oefening_6":
+                return new PanelOefening6();
+            case "Oefening_7":
+                return  new PanelOefening7();
+            case "Oefening_8":
+                return new PanelOefening8();
             default:
                 return null;
         }

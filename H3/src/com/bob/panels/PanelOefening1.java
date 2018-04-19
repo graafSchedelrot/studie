@@ -10,7 +10,6 @@ public class PanelOefening1 extends JPanel {
     private int secondsInYear;
 
     PanelOefening1() {
-        setBackground(Color.WHITE);
         secondsInHour = 60 * 60;
         secondsInDay = secondsInHour * 24;
         secondsInYear = secondsInDay * 365;

@@ -10,7 +10,6 @@ public class PanelOefening2 extends JPanel {
     private int result;
 
     PanelOefening2() {
-        setBackground(Color.WHITE);
         result = negativeNumber1 - negativeNumber2;
     }
 

@@ -5,14 +5,11 @@ import java.awt.*;
 
 public class PanelOefening5 extends JPanel {
 
-    PanelOefening5() {
-
-    }
-
     public void paintComponent(Graphics g) {
         super.paintComponent(g);
-        g.drawLine(100, 100, 200, 200);
-
+        g.drawLine(50, 150, 150, 150);
+        g.drawLine(50, 150, 100, 50);
+        g.drawLine(150, 150, 100, 50);
     }
 
 }
