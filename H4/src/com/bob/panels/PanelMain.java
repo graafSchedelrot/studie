@@ -11,7 +11,7 @@ public class PanelMain extends JPanel {
     private ButtonHandler buttonHandler = new ButtonHandler();
 
     public PanelMain() {
-
+        add(newButton("Oefening 4.1", "Oefening_1"));
     }
 
     private JButton newButton(String text, String name) {
@@ -24,7 +24,8 @@ public class PanelMain extends JPanel {
 
     private JPanel getPanelByName(String name) {
         switch (name) {
-
+            case "Oefening_1":
+                return new PanelOefening1();
             default:
                 return null;
         }
