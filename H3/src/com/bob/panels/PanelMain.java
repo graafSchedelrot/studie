@@ -19,6 +19,7 @@ public class PanelMain extends JPanel {
         add(newButton("Oefening 3.7", "Oefening_7"));
         add(newButton("Oefening 3.8", "Oefening_8"));
         add(newButton("Oefening 3.9 & 3.10", "Oefening_9"));
+        add(newButton("Oefening 3.11 & 3.12", "Oefening_11"));
     }
 
     private JButton newButton(String text, String name) {
@@ -47,6 +48,8 @@ public class PanelMain extends JPanel {
                 return new PanelOefening8();
             case "Oefening_9":
                 return new PanelOefening9();
+            case "Oefening_11":
+                return new PanelOefening11();
             default:
                 return null;
         }
