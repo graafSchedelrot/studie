@@ -15,8 +15,6 @@ class PanelOefening9 extends JPanel {
         invoervak2 = new JTextField(10);
         resultaatVak = new JTextField(10);
 
-
-
         JButton plusKnop = new JButton("+");
         plusKnop.addActionListener(new PlusKnopHandler());
         JButton minKnop = new JButton("-");
@@ -40,8 +38,6 @@ class PanelOefening9 extends JPanel {
         add(new JLabel(""));
         add(minKnop);
 
-
-
         //Rij 3
         add(new JLabel(""));
         add(new JLabel(""));
@@ -50,7 +46,6 @@ class PanelOefening9 extends JPanel {
         //Rij 4
         add(new JLabel(""));
         add(quotientKnop);
-//        add(new JLabel(""));
         add(restKnop);
 
         //Rij 5
