@@ -1,6 +1,6 @@
 package com.bob;
 
-        import com.bob.frames.*;
+import com.bob.frames.*;
 
 public class Main {
 
