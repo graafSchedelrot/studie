@@ -12,9 +12,11 @@ public class PanelMain extends JPanel {
 
     public PanelMain() {
         add(newButton("Oefening 4.1", "Oefening_1"));
+        add(newButton("Oefening 4.2", "Oefening_2"));
+        add(newButton("Oefening 4.3 & 4.4", "Oefening_3"));
     }
 
-    private JButton newButton(String text, String name) {
+    private JButton newButton(final String text, final String name) {
         JButton button = new JButton(text);
         button.setName(name);
         button.addActionListener(buttonHandler);
@@ -22,10 +24,14 @@ public class PanelMain extends JPanel {
     }
 
 
-    private JPanel getPanelByName(String name) {
+    private JPanel getPanelByName(final String name) {
         switch (name) {
             case "Oefening_1":
                 return new PanelOefening1();
+            case "Oefening_2":
+                return new PanelOefening2();
+            case "Oefening_3":
+                return new PanelOefening3();
             default:
                 return null;
         }
